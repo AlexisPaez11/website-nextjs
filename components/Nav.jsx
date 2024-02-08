@@ -5,9 +5,9 @@ import Link from "next/link"
 export default function Nav () {
     return (
     <>
-    <nav className="flex sticky top-0 h-16 py-3 z-10" >
+    <nav className="" >
         {/* <ul className={isMobile ? 'nav-menu-mobile' : 'nav-menu'} onClick={() => setIsMobile(false)}> */}
-        <ul className="w-full grid grid-flow-col justify-center items-center gap-12 text-base font-bold">
+        <ul className="">
             <li>
             <Link href='/'><a>Inicio</a></Link>
             </li>

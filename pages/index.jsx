@@ -32,13 +32,13 @@ export default function Home({ posts }) {
       {posts.map(({ slug, metadata }) => (
         <Link key={slug} href={`/post/${slug}`}>
           <a>
-          <article className='article-card grid grid-flow-row p-2 gap-2 rounded-xl'>
-                <div className='category grid grid-flow-col justify-start items-center gap-3'>
+          <article className=''>
+                <div className=''>
                   {/* <>{metadata.categoryImg}</> */}
-                  <p className='text-base font-medium'>{metadata.category}</p>
+                  <p className=''>{metadata.category}</p>
                 </div>
                 <Image
-                  className='rounded-lg object-cover text-center'
+                  className=''
                   src={metadata.image}
                   alt={`Imagen para el articulo ${metadata.alt}`}
                   height='55'
@@ -47,7 +47,7 @@ export default function Home({ posts }) {
                   layout='responsive'
                   quality={100}
                 />
-                <h3 className='text-xl font-bold {/*h-14*/} overflow-hidden text-ellipsis'>{metadata.title}</h3>
+                <h3 className=''>{metadata.title}</h3>
                 <time className='text-lg' dateTime={metadata.dateTime}>{metadata.date}</time>
               </article>
           </a>
